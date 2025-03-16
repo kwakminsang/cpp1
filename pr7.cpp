@@ -17,7 +17,7 @@ string convertToKorean(int num) {
         divisor /= 10;
 
         if (digit > 0) {
-            if (!(digit == 1 && i > 0)) result.push_back(numbers[digit]); // 10단위 이상에서 '1' 생략
+            if (!(digit == 1 && i > 0)) result.push_back(numbers[digit]); 
             result.push_back(units[i]);
             hasPrevious = true;
         }
